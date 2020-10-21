@@ -2,17 +2,18 @@ package com.poblete.appexampleproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView textView, textView2;
-    EditText txtEmail, txtPassword;
-    Button btnInicio, btnRegistro;
+    private TextView textView, textView2;
+    private EditText txtEmail, txtPassword;
+    private Button btnInicio, btnRegistro;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,20 @@ public class MainActivity extends AppCompatActivity {
         btnInicio = findViewById(R.id.btnInicio);
         btnRegistro = findViewById(R.id.btnRegistro);
 
+        btnInicio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        btnRegistro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent formRegistro = new Intent(MainActivity.this, RegistroActivity.class);
+                startActivity(formRegistro);
+            }
+        });
 
     }
 }

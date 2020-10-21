@@ -35,7 +35,7 @@
             android:id="@+id/txtNombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="15dp"
             android:ems="10"
             android:hint="Ingresar Nombre"
             android:inputType="textPersonName"
@@ -103,6 +103,7 @@
             android:ems="10"
             android:hint="Confirmar Contraseña"
             android:inputType="textPassword"
+            android:textAlignment="center"
             android:textColor="@android:color/black"
             android:textColorHint="@android:color/black"
             app:layout_constraintEnd_toEndOf="parent"
@@ -128,9 +129,11 @@
 
         <RadioGroup
             android:id="@+id/radioGroup"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
             android:layout_marginTop="15dp"
+            android:layout_marginEnd="40dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -142,21 +145,24 @@
                 android:layout_height="wrap_content"
                 android:text="Seleccione Género"
                 android:textAlignment="center"
-                android:textColor="@android:color/black" />
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
 
             <RadioButton
                 android:id="@+id/rbtnF"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Femenino"
-                android:textColor="@android:color/black" />
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
 
             <RadioButton
                 android:id="@+id/rbtnM"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Masculino"
-                android:textColor="@android:color/black" />
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
         </RadioGroup>
 
         <Button
@@ -166,7 +172,7 @@
             android:layout_marginTop="15dp"
             android:text="Enviar registro"
             android:textColor="@android:color/black"
-            android:textSize="12sp"
+            android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -174,27 +180,4 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="84dp"
-        android:layout_height="73dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.055"
-        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.053"
-        app:srcCompat="@drawable/pizza" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="78dp"
-        android:layout_height="88dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.19"
-        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.031"
-        app:srcCompat="@drawable/taco" />
 </androidx.constraintlayout.widget.ConstraintLayout>
